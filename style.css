@@ -1,0 +1,214 @@
+body{
+    background-color: #FFF9EC;
+}
+main{
+    padding-top: 4rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
+.navbar-nav{
+    margin-left:auto;
+}
+.nav-item{
+    color: #FFDCCC;
+}
+h1{
+    padding: 1rem 0rem;
+}
+h5{
+    padding: 0.5rem 0rem;
+}
+.card{
+    padding: 1rem;
+}
+.row{
+    padding: 1rem;
+}
+.navbar-custom{
+    background-color: #5D2A42;
+}
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-text{
+    color: #FFDCCC;
+}
+#rat{
+    text-align: center;
+}
+.ratIMG{
+    text-align: center;
+    padding: 1rem;
+}
+p{
+    padding: 1rem;
+}
+.card{
+    background-color: #FFDCCC;
+}
+.btn{
+    background-color: #FCB1A6;
+    color:#5D2A42;
+}
+.card-text{
+    color:#5D2A42;
+}
+h5{
+    color:#5D2A42;
+}
+h4{
+    color:#5D2A42;
+}
+.text-box{
+    font-size:100px;
+    text-align: center;
+    padding: 1rem;
+}
+.story{
+    width: 20rem;
+    height:20rem;
+}
+.flex-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: baseline;
+}
+.story-text{
+    width: 20rem;
+    font-size: smaller;
+    margin-top:0rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+.caption{
+    width: 35rem;
+    font-size: medium;
+    margin-top:0rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+.welcome{
+    display: inline-block;
+    font-weight: bolder;
+    animation: mover 6s linear infinite;
+}
+.accordion-item{
+    background-color: #FFDCCC;
+    color: #5D2A42;
+    
+}
+.accordion-button{
+    background-color: #5D2A42;
+    color: #FFDCCC;
+}
+.accordion-button:not(.collapsed) {
+    color: #FFDCCC;
+    background-color: #5D2A42;
+}
+#firstSS{
+    width: 50rem;
+    height: 30rem;
+    padding: 1rem;
+}
+#secondSS{
+    width: 40rem;
+    height: 30rem;
+    padding: 1rem;
+}
+#thirdSS{
+    width: 40rem;
+    height: 68rem;
+    padding: 1rem;
+}
+#fourthSS{
+    width: 40rem;
+    height: 30rem;
+    padding: 1rem;
+}
+#fifthSS{
+    width: 42rem;
+    height: 30rem;
+    padding: 1rem;
+}
+#sixthSS{
+    width: 40rem;
+    height: 35rem;
+    padding: 1rem;
+}
+#seventhSS{
+    width: 40rem;
+    height: 32rem;
+    padding: 1rem;
+}
+#eigthSS{
+    width: 45rem;
+    height: 25rem;
+    padding: 1rem;
+}
+#ninthSS{
+    width: 37rem;
+    height: 43rem;
+    padding: 1rem;
+}
+#tenthSS{
+    width: 25rem;
+    height: 50rem;
+    padding: 1rem;
+}
+@keyframes mover{
+    0%{
+        text-shadow: 0 0 30px rgba(0,0,0,0);
+    }
+    50%{
+        text-shadow: 0 0 30px rgba(0,0,0,30);
+        transform: translateY(30px);
+    }
+    100%{
+        text-shadow: 0 0 30px rgba(0,0,0,0);
+    }
+}
+.welcome:nth-child(1){
+    animation-delay: 0.5s;
+}
+.welcome:nth-child(2){
+    animation-delay: 1s;
+}
+.welcome:nth-child(3){
+    animation-delay: 1.5s;
+}
+.welcome:nth-child(4){
+    animation-delay: 2s;
+}
+.welcome:nth-child(5){
+    animation-delay: 2.5s;
+}
+.welcome:nth-child(6){
+    animation-delay: 3s;
+}
+.welcome:nth-child(7){
+    animation-delay: 3.5s;
+}
+.welcome:nth-child(8){
+    animation-delay: 4s;
+}
+.welcome:nth-child(9){
+    animation-delay: 4.5s;
+}
+.welcome:nth-child(10){
+    animation-delay: 5s;
+}
+.welcome:nth-child(11){
+    animation-delay: 5.5s;
+}
+.welcome:nth-child(12){
+    animation-delay: 6s;
+}
+.welcome:nth-child(13){
+    animation-delay: 6.5s;
+}
+.welcome:nth-child(14){
+    animation-delay: 7s;
+}
+.welcome:nth-child(15){
+    animation-delay: 7.5s;
+}
