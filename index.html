@@ -6,170 +6,131 @@
   <title>Brown Pay Your Debts</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <style>
+    @font-face {
+      font-family: 'ExposureItalic';
+      src: url('ExposureItalicTrial[-40].otf') format('opentype');
+    }
+
     body {
-      font-family: 'Arial', sans-serif;
-      background-color: #f5f5f5;
+      font-family: 'ExposureItalic', sans-serif;
+      background-color: #efeeee;
       text-align: center;
       padding: 40px 10px;
+      color: #2b2c2e;
     }
 
     h1 {
-      font-size: 3rem; /* larger text */
+      font-size: 4rem;
       font-weight: 700;
-      margin-bottom: 20px;
-
-      color: #111;
+      margin-bottom: 24px;
+      color: #e71030;
     }
 
     a.btn-donate {
       display: inline-block;
-      margin: 24px auto;
-      padding: 20px 40px;          /* more padding */
-      background-color: #28a745;
-      color: white;
-      border-radius: 10px;
+      margin: 20px auto;
+      padding: 24px 48px;
+      background-color: #72c298;
+      color: #2b2c2e;
+      border-radius: 12px;
       text-decoration: none;
       font-weight: 800;
-      font-size: 1.5rem;           /* even larger text */
-      min-width: 260px;            /* wider button */
+      font-size: 1.75rem;
+      min-width: 280px;
       transition: background 0.3s;
     }
 
     a.btn-donate:hover {
-      background-color: #218838;
-    }
-
-    .card-container {
-      perspective: 1000px;
-      width: 260px;
-      height: 350px;
-      margin: 20px;
-    }
-
-    .card {
-      width: 100%;
-      height: 100%;
-      position: relative;
-      transition: transform 0.6s;
-      transform-style: preserve-3d;
-      cursor: pointer;
-    }
-
-    .card.flipped {
-      transform: rotateY(180deg);
-    }
-
-    .card-face {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      backface-visibility: hidden;
-      border-radius: 15px;
-      box-shadow: 0 6px 12px rgba(0,0,0,0.2);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 20px;
-      text-align: center;
-      /* font-size: 1.1rem; */
-      font-weight: 500;
-      word-wrap: break-word;
-
-    }
-
-    .card-front {
-      background-color: #111;  /* black */
-      color: white;
-      font-size: 1.5rem;
-
-    }
-
-    .card-back {
-      background-color: #d00000;  /* red */
-      color: white;
-      transform: rotateY(180deg);
-      font-size: 0.68rem;
-
+      background-color: #5aa67f;
     }
 
     .cards-wrapper {
       display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      margin-top: 40px;
     }
-    .card-face ul {
-      list-style-type: disc;
-      text-align: left;
-      padding-left: 20px;
-      margin-top: 10px;
-      font-size: 0.65rem;
+
+    .card-link {
+      width: 90%;
+      max-width: 400px;
+      background-color: #2b2c2e;
+      color: #ffffff;
+      border-radius: 16px;
+      padding: 30px;
+      text-align: center;
+      text-decoration: none;
+      font-size: 1.25rem;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+      transition: transform 0.2s, background-color 0.2s;
     }
-    .card-face a {
+
+    .card-link:hover {
+      background-color: #e71030;
+      transform: translateY(-4px);
       color: #fff;
-      text-decoration: underline;
+    }
+
+    p, h6, h5 {
+      max-width: 800px;
+      margin: 0 auto 24px;
+      font-size: 1rem;
+    }
+
+    h6 {
+      font-size: 1.1rem;
+      color: #555;
+    }
+
+    h5 {
+      font-size: 1.3rem;
+      font-weight: bold;
+      margin-top: 40px;
     }
   </style>
 </head>
 <body>
   <h1>Brown, pay your debts!</h1>
+
   <a class="btn-donate" href="https://venmo.com/brown-divest" target="_blank">Donate via Venmo</a>
   <a class="btn-donate" href="https://gofund.me/423caa94" target="_blank">Donate via GoFundMe</a>
+
+  <p>As students, alumni, faculty, and families, we commit to redistributing funds instead of giving our money to Brown. This effort is our small way of paying Brown's debt to the millions they have invested in genocide, apartheid, and scholasticide.</p>
+  
   <h6>We will be splitting donations equally to the three organizations below. Click on the cards to learn more about the organizations!</h6>
 
   <div class="cards-wrapper">
-    <div class="card-container">
-      <div class="card" onclick="this.classList.toggle('flipped')">
-        <div class="card-face card-front">
-          Alliance to Mobilize Our Resistance<br>(Deportation Defense in RI)
-        </div>
-        <div class="card-face card-back">
-          <p>
-          Alliance to Mobilize Our Resistance (AMOR) is a nonprofit organization in Rhode Island that organizes to interrupt state violence and supports people impacted by the inhumane immigration system. They do this through community organizing, advocacy and by creating safe, healing, accessible, and empowering community spaces. AMOR fights for a world where humane immigration practices are guaranteed and where crossing borders is a natural and safe part of life, especially for our Black and Indigenous relatives. A world with equitable access to basic resources and services for migrants, including mental and physical health, housing, food, language and education, and where migrants are guaranteed due process under the law.
-          Read more about their work <a href="https://amorri.org/">here</a>.
-          </p>
-        </div>
-      </div>
-    </div>
+    <a class="card-link" href="https://amorri.org/" target="_blank">
+      Alliance to Mobilize Our Resistance<br><small>(Deportation Defense in RI)</small>
+    </a>
 
-    <div class="card-container">
-      <div class="card" onclick="this.classList.toggle('flipped')">
-        <div class="card-face card-front">
-          Providence Youth Student Movement<br>(Refugee Support and Defense in RI)
-        </div>
-        <div class="card-face card-back">
-          <div>
-            Providence Youth Student Movement (PrYSM) is supporting over 70 Southeast Asian refugees with deportation orders. They provide organizing, legal, and community resources for our members and their families to fight against the US deportation machine.
-            With your support, PrYSM can continue to:
-            <ul>
-              <li>provide rapid response for community members detained and facing immediate deportation</li>
-              <li>provide mutual aid for legal fees and services</li>
-              <li>support impacted members and their families during ICE check ins and court hearings</li>
-              <li>provide case management for current and new members with orders of deportation</li>
-            </ul>
-            Read more about their work <a href="https://www.prysm.us/">here</a>.
-          </div>
-        </div>
-      </div>
-    </div>
+    <a class="card-link" href="https://www.prysm.us/" target="_blank">
+      Providence Youth Student Movement<br><small>(Refugee Support and Defense in RI)</small>
+    </a>
 
-    <div class="card-container">
-      <div class="card" onclick="this.classList.toggle('flipped')">
-        <div class="card-face card-front">
-          Middle Eastern Children's Alliance<br>(Palestinian Community Project Support)
-        </div>
-        <div class="card-face card-back">
-          <p>
-          The Middle East Children's Alliance (MECA) works to protect the rights and improve the lives of children in the Middle East through aid, empowerment and education. In the Middle East, MECA provides humanitarian aid, partners with community organizations to run projects for children, and supports income-generation projects. In the US and internationally, MECA raises awareness about the lives of children in the region and encourages meaningful action.
-          Read more about their work <a href="https://www.mecaforpeace.org/">here</a>.
-          </p>
-        </div>
-      </div>
-    </div>
+    <a class="card-link" href="https://www.mecaforpeace.org/" target="_blank">
+      Middle Eastern Children's Alliance<br><small>(Palestinian Community Project Support)</small>
+    </a>
   </div>
-  <h5>Trying to figure out how much to donate?</h5>
+
+  <p>
+    NO GRADUATION WITHOUT GAZA! Brown remains complicit in genocide!
+    <!-- ...rest of your paragraph remains unchanged... -->
+    <br/><br/>
+    For over 595 days of American sponsored genocide, Israel has bombed, murdered, raided, starved, abused, and ethnically cleansed the Palestinians of Gaza with unprecedented impunity. These crimes are not possible without the financial, social, and political capital that institutions like Brown provide under the façade of institutional neutrality. There is no neutrality while over 50,000 innocents have been slaughtered, and estimates of the actual death toll exceed 186,000. More than 14,000 children, that could be accounted for, have been killed.
+    Over 17 months of student/worker, faculty, staff, alumni, and community mobilization to end Brown’s complicity in these crimes, the university administration has been presented with manifold opportunities to oppose these atrocities, correct the institution's historical failures to stand on the right side of history, and meet the moment with the urgency and courage it demands. It has failed at every step to name, let alone oppose, what has already become the definitive case of scholasticide, the fastest imposed starvation campaign in modern history, the largest orphan crisis in modern history, and the deadliest conflict ever for journalists.
+    INSTEAD:
+    Last academic year Brown arrested 616 of its own students for acts of conscience against this complicity in what the UN has identified as an illegal occupation and what leading international human rights organizations, including Amnesty International and the Israeli B’Tselem, have deemed an apartheid regime under international law. 
+    DESPITE a majority vote of the Brown University Community Council on a resolution calling on Brown to drop the charges on the students, Christina Paxson unilaterally decided to continue pursuing legal action against the students. The charges were dropped at the order of a Providence judge. The American injustice system, known for punishing anti-war and anti-racist civil disobedience, did better by Brown students than the president of their own university.
+    DESPITE promising student protestors that staged a week long Gaza solidarity encampment good faith efforts to hear the case for divestment, Brown conspired to overturn a 2021 ethical investment board recommendation to divest from companies facilitating Israel's illegal occupation of Palestine, overturned divestment at the corporation level, and suspended Students for Justice in Palestine.
+    DESPITE a Graduate Labor Organization petition signed by over 500 graduate workers and community members in solidarity calling for protection from ICE raids, the weaponization of false accusations of antisemitism which has led to students and grad workers being illegally abducted and detained, and protections for trans students and workers, the university has not declined to even respond.
+    Brown has done nothing but aid and abet genocide and enabled unprecedented repression and retaliation against students, grad workers, staff and faculty opposing genocide. 
+
+    As students, alumni, faculty, and families, we commit to redistributing funds instead of giving our money to Brown. This effort is our small way of paying Brown's debt to the millions they have invested in genocide, apartheid, and scholasticide. The money collected over the weekend will be split between the Middle East Children's Allliance (MECA), an aid organization working with children in Palestine, and the Alliance to Mobilize Our Resistance (AMOR) and Providence Youth Student Movement (PRSYM), two RI-based organizations working to end the Deportation machine and ICE terror in our communities. 
+  </p>
 </body>
 </html>
-
 
 
 
