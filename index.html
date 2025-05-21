@@ -13,20 +13,25 @@
       padding: 40px 10px;
     }
 
-    h1, h2 {
+    h1 {
+      font-size: 3rem; /* larger text */
+      font-weight: 700;
+      margin-bottom: 20px;
+
       color: #111;
-      margin-bottom: 10px;
     }
 
     a.btn-donate {
       display: inline-block;
-      margin: 20px auto;
-      padding: 12px 24px;
-      background-color: #28a745; /* green */
+      margin: 24px auto;
+      padding: 20px 40px;          /* more padding */
+      background-color: #28a745;
       color: white;
-      border-radius: 6px;
+      border-radius: 10px;
       text-decoration: none;
-      font-weight: bold;
+      font-weight: 800;
+      font-size: 1.5rem;           /* even larger text */
+      min-width: 260px;            /* wider button */
       transition: background 0.3s;
     }
 
@@ -75,7 +80,7 @@
     .card-front {
       background-color: #111;  /* black */
       color: white;
-      font-size: 1.1rem;
+      font-size: 1.5rem;
 
     }
 
@@ -83,7 +88,7 @@
       background-color: #d00000;  /* red */
       color: white;
       transform: rotateY(180deg);
-      font-size: 0.85rem;
+      font-size: 0.68rem;
 
     }
 
@@ -92,13 +97,24 @@
       flex-wrap: wrap;
       justify-content: center;
     }
+    .card-face ul {
+      list-style-type: disc;
+      text-align: left;
+      padding-left: 20px;
+      margin-top: 10px;
+      font-size: 0.65rem;
+    }
+    .card-face a {
+      color: #fff;
+      text-decoration: underline;
+    }
   </style>
 </head>
 <body>
-  <h1>Brown Pay Your Debts</h1>
-  <h2>We will be splitting donations equally to the three organizations below.</h2>
+  <h1>Brown, pay your debts!</h1>
   <a class="btn-donate" href="https://venmo.com/brown-divest" target="_blank">Donate via Venmo</a>
-  <a class="btn-donate" href="" target="_blank">Donate via GoFundMe</a>
+  <a class="btn-donate" href="https://gofund.me/423caa94" target="_blank">Donate via GoFundMe</a>
+  <h6>We will be splitting donations equally to the three organizations below. Click on the cards to learn more about the organizations!</h6>
 
   <div class="cards-wrapper">
     <div class="card-container">
@@ -108,7 +124,7 @@
         </div>
         <div class="card-face card-back">
           <p>
-          Alliance to Mobilize Our Resistance (AMOR) is a nonprofit organization in Rhode Island that organizes to interrupt state violence and supports people impacted by the inhumane immigration system. They do this through community organizing, advocacy and by creating safe, healing, accessible, and empowering community spaces. 
+          Alliance to Mobilize Our Resistance (AMOR) is a nonprofit organization in Rhode Island that organizes to interrupt state violence and supports people impacted by the inhumane immigration system. They do this through community organizing, advocacy and by creating safe, healing, accessible, and empowering community spaces. AMOR fights for a world where humane immigration practices are guaranteed and where crossing borders is a natural and safe part of life, especially for our Black and Indigenous relatives. A world with equitable access to basic resources and services for migrants, including mental and physical health, housing, food, language and education, and where migrants are guaranteed due process under the law.
           Read more about their work <a href="https://amorri.org/">here</a>.
           </p>
         </div>
@@ -121,10 +137,17 @@
           Providence Youth Student Movement<br>(Refugee Support and Defense in RI)
         </div>
         <div class="card-face card-back">
-          <p>
-          PrYSM organizes at the intersections of race, class, gender, and sexual orientation by centering youth, female, queer, and people of color leadership in our campaigns, our organization, and our communities. PrYSM mobilizes queer Southeast Asian youth, families, and allies to build grassroots power and organize collectively for social justice. 
-          Read more about their work <a href="https://www.prysm.us/">here</a>.
-          </p>
+          <div>
+            Providence Youth Student Movement (PrYSM) is supporting over 70 Southeast Asian refugees with deportation orders. They provide organizing, legal, and community resources for our members and their families to fight against the US deportation machine.
+            With your support, PrYSM can continue to:
+            <ul>
+              <li>provide rapid response for community members detained and facing immediate deportation</li>
+              <li>provide mutual aid for legal fees and services</li>
+              <li>support impacted members and their families during ICE check ins and court hearings</li>
+              <li>provide case management for current and new members with orders of deportation</li>
+            </ul>
+            Read more about their work <a href="https://www.prysm.us/">here</a>.
+          </div>
         </div>
       </div>
     </div>
@@ -143,7 +166,7 @@
       </div>
     </div>
   </div>
-  <h3>Trying to figure out how much to donate?</h3>
+  <h5>Trying to figure out how much to donate?</h5>
 </body>
 </html>
 
